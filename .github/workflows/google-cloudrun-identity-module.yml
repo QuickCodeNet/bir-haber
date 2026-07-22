@@ -84,6 +84,7 @@ jobs:
             src/
           
       - name: Build and Push Container Finished
+        id: notify_build_done
         if: always()
         run: |
           curl -f -S --connect-timeout 15 --max-time 60 --retry 3 --retry-delay 5 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.BUILD_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Completed&runId=${{ env.QUICKCODE_RUN_ID }}"
@@ -120,20 +121,19 @@ jobs:
             --port=80
             --allow-unauthenticated
       - name: Deploy to Cloud Run Finished
+        id: notify_deploy_done
         if: always()
         run: |
           curl -f -S --connect-timeout 15 --max-time 60 --retry 3 --retry-delay 5 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.DEPLOY_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Deployed&runId=${{ env.QUICKCODE_RUN_ID }}"
           echo "Deploy finished notification sent"
 
       - name: Notify job completed (fallback)
-        if: always()
+        if: always() && (steps.notify_build_done.outcome == 'failure' || steps.notify_deploy_done.outcome == 'failure')
         run: |
-          DEPLOY_URL="${{ steps.deploy.outputs.url }}"
-          MSG="${DEPLOY_URL:-JobFinished}"
-          for i in 1 2 3 4 5; do
-            curl -f -S --connect-timeout 15 --max-time 60 --retry 3 --retry-delay 5 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.BUILD_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Completed&runId=${{ env.QUICKCODE_RUN_ID }}" && \
-            curl -f -S --connect-timeout 15 --max-time 60 --retry 3 --retry-delay 5 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.DEPLOY_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Deployed&runId=${{ env.QUICKCODE_RUN_ID }}" && break
-            sleep 10
+          for i in 1 2 3; do
+            curl -f -S --connect-timeout 15 --max-time 30 --retry 2 --retry-delay 3 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.BUILD_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Completed&runId=${{ env.QUICKCODE_RUN_ID }}" && \
+            curl -f -S --connect-timeout 15 --max-time 30 --retry 2 --retry-delay 3 "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorActionByProject?projectName=${{ env.PROJECT_NAME }}&step=${{ env.DEPLOY_STEP_NAME }}&stepParameters=${{ env.STEP_PARAMS }}&isCompleted=true&message=Deployed&runId=${{ env.QUICKCODE_RUN_ID }}" && break
+            sleep 5
           done
         continue-on-error: true
           
