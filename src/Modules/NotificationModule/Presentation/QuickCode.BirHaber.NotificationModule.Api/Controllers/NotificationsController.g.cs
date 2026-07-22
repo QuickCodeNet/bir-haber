@@ -220,7 +220,7 @@ namespace QuickCode.BirHaber.NotificationModule.Api.Controllers
         }
 
         [HttpGet("get-unread-count/{notificationReaderId:int}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(long))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetUnreadCountResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
         public async Task<IActionResult> GetUnreadCountAsync(int notificationReaderId)

@@ -370,7 +370,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.Notificati
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> NotificationQueuesGetQueueSizeAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetQueueSizeResponseDto> NotificationQueuesGetQueueSizeAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -456,7 +456,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.Notificati
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> NotificationsGetUnreadCountAsync(int notificationReaderId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetUnreadCountResponseDto> NotificationsGetUnreadCountAsync(int notificationReaderId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -1729,6 +1729,39 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.Notificati
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetUnreadCountResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("unreadCount")]
+        public int UnreadCount { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetUnreadCountResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetUnreadCountResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class GetUnreadResponseDto
     {
 
@@ -2665,6 +2698,39 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.Notificati
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<GetPendingQueueResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetQueueSizeResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("queueSize")]
+        public int QueueSize { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetQueueSizeResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetQueueSizeResponseDto>(data, options);
 
         }
     }

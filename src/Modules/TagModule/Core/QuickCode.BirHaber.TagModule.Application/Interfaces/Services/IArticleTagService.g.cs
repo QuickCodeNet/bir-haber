@@ -27,7 +27,7 @@ namespace QuickCode.BirHaber.TagModule.Application.Services.ArticleTag
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<List<GetByArticleResponseDto>>> GetByArticleAsync(int articleTagArticleId, int? pageNumber, int? pageSize);
         Task<Response<List<GetByTagResponseDto>>> GetByTagAsync(int articleTagTagId, int? pageNumber, int? pageSize);
-        Task<Response<long>> GetTagCountByArticleAsync(int articleTagArticleId);
+        Task<Response<GetTagCountByArticleResponseDto>> GetTagCountByArticleAsync(int articleTagArticleId);
         Task<Response<int>> RemoveTagAsync(int articleTagArticleId, int articleTagTagId);
     }
 }

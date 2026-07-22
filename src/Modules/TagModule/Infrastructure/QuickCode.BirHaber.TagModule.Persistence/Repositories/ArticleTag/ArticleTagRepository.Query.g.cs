@@ -86,7 +86,7 @@ namespace QuickCode.BirHaber.TagModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetTagCountByArticleAsync(int articleTagArticleId)
+        public async Task<RepoResponse<GetTagCountByArticleResponseDto>> GetTagCountByArticleAsync(int articleTagArticleId)
         {
             return await ExecuteWithExceptionHandling(ArticleTagCrudSqlBindings.OperationNames.GetTagCountByArticle, async () =>
             {
@@ -96,8 +96,8 @@ namespace QuickCode.BirHaber.TagModule.Persistence.Repositories
                     PRM_ARTICLE_TAG_ARTICLE_ID = articleTagArticleId
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
-                var result = await connection.ExecuteScalarAsync<long>(sql, parameters);
-                return new RepoResponse<long>(result);
+                var value = await connection.QueryFirstOrDefaultAsync<GetTagCountByArticleResponseDto>(sql, parameters);
+                return BuildResponse(value, "Not found in ArticleTag");
             });
         }
     }

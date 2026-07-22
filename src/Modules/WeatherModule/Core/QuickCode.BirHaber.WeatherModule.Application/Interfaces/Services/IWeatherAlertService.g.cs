@@ -28,7 +28,7 @@ namespace QuickCode.BirHaber.WeatherModule.Application.Services.WeatherAlert
         Task<Response<List<GetActiveAlertsResponseDto>>> GetActiveAlertsAsync(DateTime weatherAlertEndTime, int? pageNumber, int? pageSize);
         Task<Response<List<GetByCityResponseDto>>> GetByCityAsync(int weatherAlertCityId, int? pageNumber, int? pageSize);
         Task<Response<List<GetCriticalAlertsResponseDto>>> GetCriticalAlertsAsync(int? pageNumber, int? pageSize);
-        Task<Response<long>> GetAlertCountAsync();
+        Task<Response<GetAlertCountResponseDto>> GetAlertCountAsync();
         Task<Response<int>> DeactivateAlertAsync(int weatherAlertId, DeactivateAlertRequestDto updateRequest);
         Task<Response<int>> ExtendAlertAsync(int weatherAlertId, ExtendAlertRequestDto updateRequest);
     }

@@ -114,7 +114,7 @@ namespace QuickCode.BirHaber.WeatherModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetAlertCountAsync()
+        public async Task<RepoResponse<GetAlertCountResponseDto>> GetAlertCountAsync()
         {
             return await ExecuteWithExceptionHandling(WeatherAlertCrudSqlBindings.OperationNames.GetAlertCount, async () =>
             {
@@ -123,8 +123,8 @@ namespace QuickCode.BirHaber.WeatherModule.Persistence.Repositories
                 {
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
-                var result = await connection.ExecuteScalarAsync<long>(sql, parameters);
-                return new RepoResponse<long>(result);
+                var value = await connection.QueryFirstOrDefaultAsync<GetAlertCountResponseDto>(sql, parameters);
+                return BuildResponse(value, "Not found in WeatherAlert");
             });
         }
     }

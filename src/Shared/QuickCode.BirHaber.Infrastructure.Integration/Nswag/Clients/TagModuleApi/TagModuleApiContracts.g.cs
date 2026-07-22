@@ -112,7 +112,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.TagModuleA
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> ArticleTagsGetTagCountByArticleAsync(int articleTagArticleId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetTagCountByArticleResponseDto> ArticleTagsGetTagCountByArticleAsync(int articleTagArticleId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -688,6 +688,39 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.TagModuleA
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<GetByTagResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetTagCountByArticleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("tagCount")]
+        public int TagCount { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetTagCountByArticleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetTagCountByArticleResponseDto>(data, options);
 
         }
     }

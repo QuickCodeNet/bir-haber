@@ -86,7 +86,7 @@ namespace QuickCode.BirHaber.TagModule.Application.Services.ArticleTag
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetTagCountByArticleAsync(int articleTagArticleId)
+        public async Task<Response<GetTagCountByArticleResponseDto>> GetTagCountByArticleAsync(int articleTagArticleId)
         {
             var returnValue = await _repository.GetTagCountByArticleAsync(articleTagArticleId);
             return returnValue.ToResponse();

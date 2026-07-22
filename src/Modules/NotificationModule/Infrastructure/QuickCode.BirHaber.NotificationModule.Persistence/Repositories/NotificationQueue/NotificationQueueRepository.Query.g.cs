@@ -114,7 +114,7 @@ namespace QuickCode.BirHaber.NotificationModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetQueueSizeAsync()
+        public async Task<RepoResponse<GetQueueSizeResponseDto>> GetQueueSizeAsync()
         {
             return await ExecuteWithExceptionHandling(NotificationQueueCrudSqlBindings.OperationNames.GetQueueSize, async () =>
             {
@@ -123,8 +123,8 @@ namespace QuickCode.BirHaber.NotificationModule.Persistence.Repositories
                 {
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
-                var result = await connection.ExecuteScalarAsync<long>(sql, parameters);
-                return new RepoResponse<long>(result);
+                var value = await connection.QueryFirstOrDefaultAsync<GetQueueSizeResponseDto>(sql, parameters);
+                return BuildResponse(value, "Not found in NotificationQueue");
             });
         }
     }

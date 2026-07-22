@@ -205,7 +205,7 @@ namespace QuickCode.BirHaber.NotificationModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetUnreadCountAsync(int notificationReaderId)
+        public async Task<RepoResponse<GetUnreadCountResponseDto>> GetUnreadCountAsync(int notificationReaderId)
         {
             return await ExecuteWithExceptionHandling(NotificationCrudSqlBindings.OperationNames.GetUnreadCount, async () =>
             {
@@ -215,8 +215,8 @@ namespace QuickCode.BirHaber.NotificationModule.Persistence.Repositories
                     PRM_NOTIFICATION_READER_ID = notificationReaderId
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
-                var result = await connection.ExecuteScalarAsync<long>(sql, parameters);
-                return new RepoResponse<long>(result);
+                var value = await connection.QueryFirstOrDefaultAsync<GetUnreadCountResponseDto>(sql, parameters);
+                return BuildResponse(value, "Not found in Notification");
             });
         }
     }

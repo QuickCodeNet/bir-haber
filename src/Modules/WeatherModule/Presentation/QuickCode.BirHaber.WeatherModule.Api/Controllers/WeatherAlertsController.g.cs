@@ -163,7 +163,7 @@ namespace QuickCode.BirHaber.WeatherModule.Api.Controllers
         }
 
         [HttpGet("get-alert-count")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(long))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetAlertCountResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
         public async Task<IActionResult> GetAlertCountAsync()

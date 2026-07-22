@@ -110,7 +110,7 @@ namespace QuickCode.BirHaber.NotificationModule.Application.Services.Notificatio
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetUnreadCountAsync(int notificationReaderId)
+        public async Task<Response<GetUnreadCountResponseDto>> GetUnreadCountAsync(int notificationReaderId)
         {
             var returnValue = await _repository.GetUnreadCountAsync(notificationReaderId);
             return returnValue.ToResponse();

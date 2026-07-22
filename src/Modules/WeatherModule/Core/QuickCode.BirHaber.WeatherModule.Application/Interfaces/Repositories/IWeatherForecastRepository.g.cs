@@ -20,7 +20,7 @@ namespace QuickCode.BirHaber.WeatherModule.Application.Interfaces.Repositories
         Task<RepoResponse<List<GetByCityResponseDto>>> GetByCityAsync(int weatherForecastCityId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetWeeklyForecastResponseDto>>> GetWeeklyForecastAsync(int weatherForecastCityId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetRainyForecastResponseDto>>> GetRainyForecastAsync(int weatherForecastCityId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<long>> GetForecastCountAsync(int weatherForecastCityId);
+        Task<RepoResponse<GetForecastCountResponseDto>> GetForecastCountAsync(int weatherForecastCityId);
         Task<RepoResponse<int>> UpdateForecastAsync(int weatherForecastId, UpdateForecastRequestDto updateRequest);
     }
 }

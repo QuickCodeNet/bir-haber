@@ -253,7 +253,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> WeatherAlertsGetAlertCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetAlertCountResponseDto> WeatherAlertsGetAlertCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -395,7 +395,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> WeatherForecastsGetForecastCountAsync(int weatherForecastCityId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetForecastCountResponseDto> WeatherForecastsGetForecastCountAsync(int weatherForecastCityId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -1651,6 +1651,39 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetAlertCountResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("criticalAlerts")]
+        public int CriticalAlerts { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetAlertCountResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetAlertCountResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class GetByCityResponseDto
     {
 
@@ -2298,6 +2331,39 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<GetByCityResponseDto3>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetForecastCountResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("forecastDays")]
+        public int ForecastDays { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetForecastCountResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetForecastCountResponseDto>(data, options);
 
         }
     }

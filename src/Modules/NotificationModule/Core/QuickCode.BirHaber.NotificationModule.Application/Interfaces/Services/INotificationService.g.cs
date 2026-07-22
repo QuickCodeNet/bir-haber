@@ -31,7 +31,7 @@ namespace QuickCode.BirHaber.NotificationModule.Application.Services.Notificatio
         Task<Response<List<GetByTypeResponseDto>>> GetByTypeAsync(int notificationReaderId, NotificationType notificationNotificationType, int? pageNumber, int? pageSize);
         Task<Response<List<GetByChannelResponseDto>>> GetByChannelAsync(NotificationChannel notificationChannel, int? pageNumber, int? pageSize);
         Task<Response<List<GetFailedNotificationsResponseDto>>> GetFailedNotificationsAsync(int? pageNumber, int? pageSize);
-        Task<Response<long>> GetUnreadCountAsync(int notificationReaderId);
+        Task<Response<GetUnreadCountResponseDto>> GetUnreadCountAsync(int notificationReaderId);
         Task<Response<int>> MarkAsReadAsync(int notificationId, MarkAsReadRequestDto updateRequest);
         Task<Response<int>> MarkAsSentAsync(int notificationId, MarkAsSentRequestDto updateRequest);
         Task<Response<int>> MarkAsFailedAsync(int notificationId, MarkAsFailedRequestDto updateRequest);

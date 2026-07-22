@@ -92,7 +92,7 @@ namespace QuickCode.BirHaber.WeatherModule.Application.Services.WeatherAlert
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetAlertCountAsync()
+        public async Task<Response<GetAlertCountResponseDto>> GetAlertCountAsync()
         {
             var returnValue = await _repository.GetAlertCountAsync();
             return returnValue.ToResponse();

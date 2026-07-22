@@ -4323,7 +4323,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<long> WeatherAlertsGetAlertCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<GetAlertCountResponseDto> WeatherAlertsGetAlertCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -4364,7 +4364,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<long>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<GetAlertCountResponseDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -7115,7 +7115,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<long> WeatherForecastsGetForecastCountAsync(int weatherForecastCityId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<GetForecastCountResponseDto> WeatherForecastsGetForecastCountAsync(int weatherForecastCityId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             if (weatherForecastCityId == null)
                 throw new System.ArgumentNullException("weatherForecastCityId");
@@ -7160,7 +7160,7 @@ namespace QuickCode.BirHaber.Infrastructure.Integration.Nswag.Clients.WeatherMod
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<long>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<GetForecastCountResponseDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new QuickCode.BirHaber.Infrastructure.Integration.Models.QuickCodeSwaggerException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);

@@ -19,7 +19,7 @@ namespace QuickCode.BirHaber.TagModule.Application.Interfaces.Repositories
         Task<RepoResponse<ArticleTagDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetByArticleResponseDto>>> GetByArticleAsync(int articleTagArticleId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetByTagResponseDto>>> GetByTagAsync(int articleTagTagId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<long>> GetTagCountByArticleAsync(int articleTagArticleId);
+        Task<RepoResponse<GetTagCountByArticleResponseDto>> GetTagCountByArticleAsync(int articleTagArticleId);
         Task<RepoResponse<int>> RemoveTagAsync(int articleTagArticleId, int articleTagTagId);
     }
 }

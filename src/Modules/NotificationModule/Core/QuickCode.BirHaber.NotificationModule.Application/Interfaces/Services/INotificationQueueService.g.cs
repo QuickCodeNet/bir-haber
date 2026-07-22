@@ -28,7 +28,7 @@ namespace QuickCode.BirHaber.NotificationModule.Application.Services.Notificatio
         Task<Response<List<GetPendingQueueResponseDto>>> GetPendingQueueAsync(int? pageNumber, int? pageSize);
         Task<Response<List<GetByChannelResponseDto>>> GetByChannelAsync(NotificationChannel notificationQueueChannel, int? pageNumber, int? pageSize);
         Task<Response<List<GetFailedQueueResponseDto>>> GetFailedQueueAsync(int? pageNumber, int? pageSize);
-        Task<Response<long>> GetQueueSizeAsync();
+        Task<Response<GetQueueSizeResponseDto>> GetQueueSizeAsync();
         Task<Response<int>> IncrementRetryAsync(int notificationQueueId, IncrementRetryRequestDto updateRequest);
         Task<Response<int>> MarkSentAsync(int notificationQueueId, MarkSentRequestDto updateRequest);
         Task<Response<int>> CleanupProcessedAsync(NotificationStatus notificationQueueStatus);

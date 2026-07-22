@@ -163,7 +163,7 @@ namespace QuickCode.BirHaber.NotificationModule.Api.Controllers
         }
 
         [HttpGet("get-queue-size")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(long))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetQueueSizeResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
         public async Task<IActionResult> GetQueueSizeAsync()

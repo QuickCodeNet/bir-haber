@@ -92,7 +92,7 @@ namespace QuickCode.BirHaber.NotificationModule.Application.Services.Notificatio
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetQueueSizeAsync()
+        public async Task<Response<GetQueueSizeResponseDto>> GetQueueSizeAsync()
         {
             var returnValue = await _repository.GetQueueSizeAsync();
             return returnValue.ToResponse();

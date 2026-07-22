@@ -116,7 +116,7 @@ namespace QuickCode.BirHaber.WeatherModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetForecastCountAsync(int weatherForecastCityId)
+        public async Task<RepoResponse<GetForecastCountResponseDto>> GetForecastCountAsync(int weatherForecastCityId)
         {
             return await ExecuteWithExceptionHandling(WeatherForecastCrudSqlBindings.OperationNames.GetForecastCount, async () =>
             {
@@ -126,8 +126,8 @@ namespace QuickCode.BirHaber.WeatherModule.Persistence.Repositories
                     PRM_WEATHER_FORECAST_CITY_ID = weatherForecastCityId
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
-                var result = await connection.ExecuteScalarAsync<long>(sql, parameters);
-                return new RepoResponse<long>(result);
+                var value = await connection.QueryFirstOrDefaultAsync<GetForecastCountResponseDto>(sql, parameters);
+                return BuildResponse(value, "Not found in WeatherForecast");
             });
         }
     }
