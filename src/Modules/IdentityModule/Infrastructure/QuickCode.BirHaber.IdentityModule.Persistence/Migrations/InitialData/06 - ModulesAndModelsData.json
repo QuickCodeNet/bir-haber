@@ -1,0 +1,364 @@
+﻿{
+  "Modules": [
+    {
+      "Name": "IdentityModule",
+      "Description": "IdentityModule"
+    },
+    {
+      "Name": "CategoryModule",
+      "Description": "CategoryModule"
+    },
+    {
+      "Name": "CommentModule",
+      "Description": "CommentModule"
+    },
+    {
+      "Name": "ContentModule",
+      "Description": "ContentModule"
+    },
+    {
+      "Name": "NotificationModule",
+      "Description": "NotificationModule"
+    },
+    {
+      "Name": "TagModule",
+      "Description": "TagModule"
+    },
+    {
+      "Name": "WeatherModule",
+      "Description": "WeatherModule"
+    }
+  ],
+  "Models": [
+    {
+      "Name": "ApiMethodAccessGrants",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ApiMethodAccessGrant"
+    },
+    {
+      "Name": "ApiMethodDefinitions",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ApiMethodDefinition"
+    },
+    {
+      "Name": "AspNetRoles",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetRole"
+    },
+    {
+      "Name": "AspNetRoleClaims",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetRoleClaim"
+    },
+    {
+      "Name": "AspNetUsers",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUser"
+    },
+    {
+      "Name": "AspNetUserClaims",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserClaim"
+    },
+    {
+      "Name": "AspNetUserLogins",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserLogin"
+    },
+    {
+      "Name": "AspNetUserRoles",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserRole"
+    },
+    {
+      "Name": "AspNetUserTokens",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserToken"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AuditLog"
+    },
+    {
+      "Name": "ColumnTypes",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ColumnType"
+    },
+    {
+      "Name": "KafkaEvents",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - KafkaEvent"
+    },
+    {
+      "Name": "Models",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Model"
+    },
+    {
+      "Name": "Modules",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Module"
+    },
+    {
+      "Name": "PermissionGroups",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PermissionGroup"
+    },
+    {
+      "Name": "PortalMenus",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalMenu"
+    },
+    {
+      "Name": "PortalPageAccessGrants",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalPageAccessGrant"
+    },
+    {
+      "Name": "PortalPageDefinitions",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalPageDefinition"
+    },
+    {
+      "Name": "RefreshTokens",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - RefreshToken"
+    },
+    {
+      "Name": "TableComboboxSettings",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - TableComboboxSetting"
+    },
+    {
+      "Name": "TopicWorkflows",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - TopicWorkflow"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - AuditLog"
+    },
+    {
+      "Name": "Categories",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - Category"
+    },
+    {
+      "Name": "CategoryModerators",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - CategoryModerator"
+    },
+    {
+      "Name": "CategoryStatistics",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - CategoryStatistic"
+    },
+    {
+      "Name": "CategoryTemplates",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - CategoryTemplate"
+    },
+    {
+      "Name": "FeaturedCategories",
+      "ModuleName": "CategoryModule",
+      "Description": "CategoryModule - FeaturedCategory"
+    },
+    {
+      "Name": "Articles",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - Article"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - AuditLog"
+    },
+    {
+      "Name": "Comments",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - Comment"
+    },
+    {
+      "Name": "CommentLikes",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - CommentLike"
+    },
+    {
+      "Name": "CommentModerationQueues",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - CommentModerationQueue"
+    },
+    {
+      "Name": "CommentReports",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - CommentReport"
+    },
+    {
+      "Name": "CommentStatistics",
+      "ModuleName": "CommentModule",
+      "Description": "CommentModule - CommentStatistic"
+    },
+    {
+      "Name": "Articles",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - Article"
+    },
+    {
+      "Name": "ArticleStatistics",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - ArticleStatistic"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - AuditLog"
+    },
+    {
+      "Name": "Authors",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - Author"
+    },
+    {
+      "Name": "ContentCategories",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - ContentCategory"
+    },
+    {
+      "Name": "ContentRevisions",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - ContentRevision"
+    },
+    {
+      "Name": "Editors",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - Editor"
+    },
+    {
+      "Name": "FeaturedArticles",
+      "ModuleName": "ContentModule",
+      "Description": "ContentModule - FeaturedArticle"
+    },
+    {
+      "Name": "Articles",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - Article"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - AuditLog"
+    },
+    {
+      "Name": "Notifications",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - Notification"
+    },
+    {
+      "Name": "NotificationBatches",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - NotificationBatch"
+    },
+    {
+      "Name": "NotificationPreferences",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - NotificationPreference"
+    },
+    {
+      "Name": "NotificationQueues",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - NotificationQueue"
+    },
+    {
+      "Name": "NotificationStatistics",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - NotificationStatistic"
+    },
+    {
+      "Name": "NotificationTemplates",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - NotificationTemplate"
+    },
+    {
+      "Name": "Readers",
+      "ModuleName": "NotificationModule",
+      "Description": "NotificationModule - Reader"
+    },
+    {
+      "Name": "Articles",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - Article"
+    },
+    {
+      "Name": "ArticleTags",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - ArticleTag"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - AuditLog"
+    },
+    {
+      "Name": "Tags",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - Tag"
+    },
+    {
+      "Name": "TagSearchHistories",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - TagSearchHistory"
+    },
+    {
+      "Name": "TagStatistics",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - TagStatistic"
+    },
+    {
+      "Name": "TagSynonyms",
+      "ModuleName": "TagModule",
+      "Description": "TagModule - TagSynonym"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - AuditLog"
+    },
+    {
+      "Name": "Cities",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - City"
+    },
+    {
+      "Name": "WeatherAlerts",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - WeatherAlert"
+    },
+    {
+      "Name": "WeatherData",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - WeatherData"
+    },
+    {
+      "Name": "WeatherForecasts",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - WeatherForecast"
+    },
+    {
+      "Name": "WeatherHistories",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - WeatherHistory"
+    },
+    {
+      "Name": "WeatherPreferences",
+      "ModuleName": "WeatherModule",
+      "Description": "WeatherModule - WeatherPreference"
+    },
+    {
+      "Name": "Authentications",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule- Authentications"
+    }
+  ]
+}

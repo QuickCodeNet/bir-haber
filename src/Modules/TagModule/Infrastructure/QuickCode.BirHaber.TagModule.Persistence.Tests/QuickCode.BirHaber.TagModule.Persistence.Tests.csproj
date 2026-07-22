@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../QuickCode.BirHaber.TagModule.Persistence/QuickCode.BirHaber.TagModule.Persistence.csproj" />
+    <ProjectReference Include="../../Core/QuickCode.BirHaber.TagModule.Application/QuickCode.BirHaber.TagModule.Application.csproj" />
+    <ProjectReference Include="../../Core/QuickCode.BirHaber.TagModule.Domain/QuickCode.BirHaber.TagModule.Domain.csproj" />
+  </ItemGroup>
+
+</Project> 

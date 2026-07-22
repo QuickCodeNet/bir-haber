@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.WEATHER_ALERTS', N'U') AND name = N'IX_WEATHER_ALERTS_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_WEATHER_ALERTS_IsDeleted] ON [dbo].[WEATHER_ALERTS] ([IsDeleted]);
+END

@@ -1,0 +1,112 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>CS8669;AD0001</NoWarn>
+    <OutputType>Library</OutputType>
+    <GenerateCode>True</GenerateCode>
+    <SwaggerSource>Project</SwaggerSource>
+    <QuickCodeSiteSrcDir Condition="'$(QuickCodeSiteSrcDir)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../'))</QuickCodeSiteSrcDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Nswag\" />
+    <None Remove="Nswag\Extensions\" />
+    <None Remove="Nswag\Configs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nswag\" />
+    <Folder Include="Nswag\Extensions\" />
+    <Folder Include="Nswag\Configs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" />
+    <PackageReference Include="YamlDotNet" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NSwag.AspNetCore" />
+    <PackageReference Include="NSwag.MSBuild">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuickCode.BirHaber.Application.Contracts\QuickCode.BirHaber.Application.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Nswag\Configs\nswag_config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nswag\Configs\nswag_config.json" Condition="'$(ExcludeConfigFilesFromBuildOutput)'!='true'">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="NSwag__IdentityModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagIdentityModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagIdentityModuleUrl),ProjectDir=$(ProjectDir),ProjectName=IdentityModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagIdentityModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagIdentityModuleUrl),ProjectDir=$(ProjectDir),ProjectName=IdentityModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagIdentityModuleUrl)')" Text="Skipping NSwag for IdentityModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/IdentityModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__CategoryModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__IdentityModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagCategoryModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagCategoryModuleUrl),ProjectDir=$(ProjectDir),ProjectName=CategoryModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagCategoryModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagCategoryModuleUrl),ProjectDir=$(ProjectDir),ProjectName=CategoryModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagCategoryModuleUrl)')" Text="Skipping NSwag for CategoryModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/CategoryModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__CommentModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__CategoryModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagCommentModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagCommentModuleUrl),ProjectDir=$(ProjectDir),ProjectName=CommentModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagCommentModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagCommentModuleUrl),ProjectDir=$(ProjectDir),ProjectName=CommentModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagCommentModuleUrl)')" Text="Skipping NSwag for CommentModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/CommentModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__ContentModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__CommentModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagContentModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagContentModuleUrl),ProjectDir=$(ProjectDir),ProjectName=ContentModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagContentModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagContentModuleUrl),ProjectDir=$(ProjectDir),ProjectName=ContentModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagContentModuleUrl)')" Text="Skipping NSwag for ContentModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/ContentModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__NotificationModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__ContentModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagNotificationModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagNotificationModuleUrl),ProjectDir=$(ProjectDir),ProjectName=NotificationModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagNotificationModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagNotificationModuleUrl),ProjectDir=$(ProjectDir),ProjectName=NotificationModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagNotificationModuleUrl)')" Text="Skipping NSwag for NotificationModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/NotificationModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__TagModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__NotificationModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagTagModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagTagModuleUrl),ProjectDir=$(ProjectDir),ProjectName=TagModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagTagModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagTagModuleUrl),ProjectDir=$(ProjectDir),ProjectName=TagModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagTagModuleUrl)')" Text="Skipping NSwag for TagModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/TagModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NSwag__WeatherModule" BeforeTargets="AfterBuild" DependsOnTargets="NSwag__TagModule" Condition="'$(GenerateCode)' == 'True'">
+    <Exec Condition="Exists('$(ModuleNswagWeatherModuleUrl)') And $([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="flock -w 300 /tmp/quickcode-nswag.lock $(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagWeatherModuleUrl),ProjectDir=$(ProjectDir),ProjectName=WeatherModuleApi" ContinueOnError="false" />
+    <Exec Condition="Exists('$(ModuleNswagWeatherModuleUrl)') And !$([MSBuild]::IsOSPlatform('Linux'))" WorkingDirectory="$(MSBuildProjectDirectory)/Nswag/Configs/" Command="$(NSwagExe_Net100) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagWeatherModuleUrl),ProjectDir=$(ProjectDir),ProjectName=WeatherModuleApi" ContinueOnError="false" />
+    <Warning Condition="!Exists('$(ModuleNswagWeatherModuleUrl)')" Text="Skipping NSwag for WeatherModule: swagger JSON missing under src/swagger_files/. Build the module Api project first, then rebuild Infrastructure.Integration." />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/WeatherModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <QuickCodeSiteSrcDir Condition="'$(QuickCodeSiteSrcDir)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../'))</QuickCodeSiteSrcDir>
+    <ModuleNswagIdentityModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.IdentityModule.Api-Swagger.json'))</ModuleNswagIdentityModuleUrl>
+    <ModuleNswagCategoryModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.CategoryModule.Api-Swagger.json'))</ModuleNswagCategoryModuleUrl>
+    <ModuleNswagCommentModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.CommentModule.Api-Swagger.json'))</ModuleNswagCommentModuleUrl>
+    <ModuleNswagContentModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.ContentModule.Api-Swagger.json'))</ModuleNswagContentModuleUrl>
+    <ModuleNswagNotificationModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.NotificationModule.Api-Swagger.json'))</ModuleNswagNotificationModuleUrl>
+    <ModuleNswagTagModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.TagModule.Api-Swagger.json'))</ModuleNswagTagModuleUrl>
+    <ModuleNswagWeatherModuleUrl>$([System.IO.Path]::Combine($(QuickCodeSiteSrcDir), 'swagger_files', 'QuickCode.BirHaber.WeatherModule.Api-Swagger.json'))</ModuleNswagWeatherModuleUrl>
+  </PropertyGroup>
+</Project>

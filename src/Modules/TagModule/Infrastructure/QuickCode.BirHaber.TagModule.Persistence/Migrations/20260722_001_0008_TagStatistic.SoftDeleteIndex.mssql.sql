@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.TAG_STATISTICS', N'U') AND name = N'IX_TAG_STATISTICS_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_TAG_STATISTICS_IsDeleted] ON [dbo].[TAG_STATISTICS] ([IsDeleted]);
+END

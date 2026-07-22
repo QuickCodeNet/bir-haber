@@ -1,0 +1,13 @@
+﻿IF OBJECT_ID(N'dbo.CATEGORY_MODERATORS', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[CATEGORY_MODERATORS] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [CATEGORY_ID] int NOT NULL,
+        [MODERATOR_ID] int NOT NULL,
+        [ASSIGNED_DATE] datetime2(7) NOT NULL,
+        [IS_ACTIVE] bit NOT NULL DEFAULT 1,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_CATEGORY_MODERATORS] PRIMARY KEY ([ID])
+    );
+END;

@@ -1,0 +1,51 @@
+{
+  "identity-module-api": {
+    "Endpoint": "/swagger/identity-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "category-module-api": {
+    "Endpoint": "/swagger/category-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "comment-module-api": {
+    "Endpoint": "/swagger/comment-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "content-module-api": {
+    "Endpoint": "/swagger/content-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "notification-module-api": {
+    "Endpoint": "/swagger/notification-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "tag-module-api": {
+    "Endpoint": "/swagger/tag-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
+  "weather-module-api": {
+    "Endpoint": "/swagger/weather-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  }
+}

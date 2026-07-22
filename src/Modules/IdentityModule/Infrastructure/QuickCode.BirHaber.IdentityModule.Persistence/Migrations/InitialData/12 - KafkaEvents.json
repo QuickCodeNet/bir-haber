@@ -1,0 +1,1394 @@
+﻿{
+"KafkaEvents": [
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodulesModulesController",
+    "TopicName": "birhaber.identity_module.modules_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodulesnameModulesController",
+    "TopicName": "birhaber.identity_module.modules_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodulesnameModulesController",
+    "TopicName": "birhaber.identity_module.modules_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsdeletemodelswithmodulenamemodelmodulenameModelsController",
+    "TopicName": "birhaber.identity_module.models.delete_models_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodelsModelsController",
+    "TopicName": "birhaber.identity_module.models_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "birhaber.identity_module.models_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "birhaber.identity_module.models_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulepermissiongroupsPermissionGroupsController",
+    "TopicName": "birhaber.identity_module.permission_groups_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "birhaber.identity_module.permission_groups_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "birhaber.identity_module.permission_groups_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions.delete_api_method_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions.delete_api_method_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions.delete_portal_page_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions.delete_portal_page_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsPortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantsclearapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "birhaber.identity_module.api_method_access_grants.clear_api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "birhaber.identity_module.api_method_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "birhaber.identity_module.api_method_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "birhaber.identity_module.api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantsclearportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "birhaber.identity_module.portal_page_access_grants.clear_portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "birhaber.identity_module.portal_page_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "birhaber.identity_module.portal_page_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "birhaber.identity_module.portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodulenameportalmenukeyPortalMenusController",
+    "TopicName": "birhaber.identity_module.portal_menus.delete_portal_menu_items_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodelnameportalmenukeyportalmenunamePortalMenusController",
+    "TopicName": "birhaber.identity_module.portal_menus.delete_portal_menu_items_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalmenusPortalMenusController",
+    "TopicName": "birhaber.identity_module.portal_menus_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "birhaber.identity_module.portal_menus_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "birhaber.identity_module.portal_menus_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulecolumntypesColumnTypesController",
+    "TopicName": "birhaber.identity_module.column_types_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "birhaber.identity_module.column_types_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "birhaber.identity_module.column_types_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletablecomboboxsettingsTableComboboxSettingsController",
+    "TopicName": "birhaber.identity_module.table_combobox_settings_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "birhaber.identity_module.table_combobox_settings_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "birhaber.identity_module.table_combobox_settings_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodulenameapimethoddefinitionsmodulenameKafkaEventsController",
+    "TopicName": "birhaber.identity_module.kafka_events.clean_kafka_events_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodelnameapimethoddefinitionsmodelnameKafkaEventsController",
+    "TopicName": "birhaber.identity_module.kafka_events.clean_kafka_events_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulekafkaeventsKafkaEventsController",
+    "TopicName": "birhaber.identity_module.kafka_events_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "birhaber.identity_module.kafka_events_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "birhaber.identity_module.kafka_events_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletopicworkflowsTopicWorkflowsController",
+    "TopicName": "birhaber.identity_module.topic_workflows_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "birhaber.identity_module.topic_workflows_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "birhaber.identity_module.topic_workflows_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetrolesAspNetRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusersAspNetUsersController",
+    "TopicName": "birhaber.identity_module.asp_net_users_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "birhaber.identity_module.asp_net_users_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "birhaber.identity_module.asp_net_users_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiidentitymodulerefreshtokensupdaterefreshtokensrefreshtokentokenRefreshTokensController",
+    "TopicName": "birhaber.identity_module.refresh_tokens.update_refresh_tokens_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulerefreshtokensRefreshTokensController",
+    "TopicName": "birhaber.identity_module.refresh_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "birhaber.identity_module.refresh_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "birhaber.identity_module.refresh_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_role_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_role_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_role_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserclaimsAspNetUserClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserloginsAspNetUserLoginsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_logins_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_logins_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "birhaber.identity_module.asp_net_user_logins_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserrolesAspNetUserRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_user_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_user_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "birhaber.identity_module.asp_net_user_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusertokensAspNetUserTokensController",
+    "TopicName": "birhaber.identity_module.asp_net_user_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "birhaber.identity_module.asp_net_user_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "birhaber.identity_module.asp_net_user_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.identity_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.identity_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.identity_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulecategoriesupdatearticlecountcategoryidintCategoriesController",
+    "TopicName": "birhaber.category_module.categories.update_article_count_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulecategoriesdeactivatecategoryidintCategoriesController",
+    "TopicName": "birhaber.category_module.categories.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulecategoriesreordercategoryidintCategoriesController",
+    "TopicName": "birhaber.category_module.categories.reorder_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategoriesarchiveunusedcategorystatusCategoriesController",
+    "TopicName": "birhaber.category_module.categories.archive_unused_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymodulecategoriesCategoriesController",
+    "TopicName": "birhaber.category_module.categories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymodulecategoriesidintCategoriesController",
+    "TopicName": "birhaber.category_module.categories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategoriesidintCategoriesController",
+    "TopicName": "birhaber.category_module.categories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymodulecategorystatisticsCategoryStatisticsController",
+    "TopicName": "birhaber.category_module.category_statistics_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymodulecategorystatisticsidintCategoryStatisticsController",
+    "TopicName": "birhaber.category_module.category_statistics_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategorystatisticsidintCategoryStatisticsController",
+    "TopicName": "birhaber.category_module.category_statistics_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulecategorymoderatorsdeactivatecategorymoderatoridintCategoryModeratorsController",
+    "TopicName": "birhaber.category_module.category_moderators.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategorymoderatorsremovemoderatorcategorymoderatorcategoryidintcategorymoderatormoderatoridintCategoryModeratorsController",
+    "TopicName": "birhaber.category_module.category_moderators.remove_moderator_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymodulecategorymoderatorsCategoryModeratorsController",
+    "TopicName": "birhaber.category_module.category_moderators_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymodulecategorymoderatorsidintCategoryModeratorsController",
+    "TopicName": "birhaber.category_module.category_moderators_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategorymoderatorsidintCategoryModeratorsController",
+    "TopicName": "birhaber.category_module.category_moderators_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulefeaturedcategoriesdeactivatefeaturedcategoryidintFeaturedCategoriesController",
+    "TopicName": "birhaber.category_module.featured_categories.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymodulefeaturedcategoriesFeaturedCategoriesController",
+    "TopicName": "birhaber.category_module.featured_categories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymodulefeaturedcategoriesidintFeaturedCategoriesController",
+    "TopicName": "birhaber.category_module.featured_categories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulefeaturedcategoriesidintFeaturedCategoriesController",
+    "TopicName": "birhaber.category_module.featured_categories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicategorymodulecategorytemplatesdeactivatecategorytemplateidintCategoryTemplatesController",
+    "TopicName": "birhaber.category_module.category_templates.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymodulecategorytemplatesCategoryTemplatesController",
+    "TopicName": "birhaber.category_module.category_templates_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymodulecategorytemplatesidintCategoryTemplatesController",
+    "TopicName": "birhaber.category_module.category_templates_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymodulecategorytemplatesidintCategoryTemplatesController",
+    "TopicName": "birhaber.category_module.category_templates_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicategorymoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.category_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicategorymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.category_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicategorymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.category_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsapprovecommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsrejectcommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.reject_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsmarkspamcommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.mark_spam_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentspincommentcommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.pin_comment_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsunpincommentcommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.unpin_comment_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsincrementlikescommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.increment_likes_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentsincrementdislikescommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.increment_dislikes_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentsremovecommentcommentidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments.remove_comment_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulecommentsCommentsController",
+    "TopicName": "birhaber.comment_module.comments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulecommentsidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentsidintCommentsController",
+    "TopicName": "birhaber.comment_module.comments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentlikesremovelikecommentlikecommentidintcommentlikereaderidintCommentLikesController",
+    "TopicName": "birhaber.comment_module.comment_likes.remove_like_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulecommentlikesCommentLikesController",
+    "TopicName": "birhaber.comment_module.comment_likes_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulecommentlikesidintCommentLikesController",
+    "TopicName": "birhaber.comment_module.comment_likes_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentlikesidintCommentLikesController",
+    "TopicName": "birhaber.comment_module.comment_likes_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentreportsapprovereportcommentreportidintCommentReportsController",
+    "TopicName": "birhaber.comment_module.comment_reports.approve_report_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentreportsrejectreportcommentreportidintCommentReportsController",
+    "TopicName": "birhaber.comment_module.comment_reports.reject_report_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulecommentreportsCommentReportsController",
+    "TopicName": "birhaber.comment_module.comment_reports_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulecommentreportsidintCommentReportsController",
+    "TopicName": "birhaber.comment_module.comment_reports_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentreportsidintCommentReportsController",
+    "TopicName": "birhaber.comment_module.comment_reports_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulecommentstatisticsCommentStatisticsController",
+    "TopicName": "birhaber.comment_module.comment_statistics_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulecommentstatisticsidintCommentStatisticsController",
+    "TopicName": "birhaber.comment_module.comment_statistics_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentstatisticsidintCommentStatisticsController",
+    "TopicName": "birhaber.comment_module.comment_statistics_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentmoderationqueuesassignmoderatorcommentmoderationqueueidintCommentModerationQueuesController",
+    "TopicName": "birhaber.comment_module.comment_moderation_queues.assign_moderator_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicommentmodulecommentmoderationqueuescompletereviewcommentmoderationqueueidintCommentModerationQueuesController",
+    "TopicName": "birhaber.comment_module.comment_moderation_queues.complete_review_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulecommentmoderationqueuesCommentModerationQueuesController",
+    "TopicName": "birhaber.comment_module.comment_moderation_queues_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulecommentmoderationqueuesidintCommentModerationQueuesController",
+    "TopicName": "birhaber.comment_module.comment_moderation_queues_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulecommentmoderationqueuesidintCommentModerationQueuesController",
+    "TopicName": "birhaber.comment_module.comment_moderation_queues_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmodulearticlesArticlesController",
+    "TopicName": "birhaber.comment_module.articles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.comment_module.articles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.comment_module.articles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicommentmoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.comment_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicommentmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.comment_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicommentmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.comment_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulearticlespublisharticleidintArticlesController",
+    "TopicName": "birhaber.content_module.articles.publish_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulearticlessendforreviewarticleidintArticlesController",
+    "TopicName": "birhaber.content_module.articles.send_for_review_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulearticlesapprovearticleidintArticlesController",
+    "TopicName": "birhaber.content_module.articles.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulearticlesarchivearticleidintArticlesController",
+    "TopicName": "birhaber.content_module.articles.archive_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulearticlesincrementviewsarticleidintArticlesController",
+    "TopicName": "birhaber.content_module.articles.increment_views_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulearticlesremovedraftarticlestatusArticlesController",
+    "TopicName": "birhaber.content_module.articles.remove_draft_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmodulearticlesArticlesController",
+    "TopicName": "birhaber.content_module.articles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.content_module.articles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.content_module.articles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmodulecontentrevisionsContentRevisionsController",
+    "TopicName": "birhaber.content_module.content_revisions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmodulecontentrevisionsidintContentRevisionsController",
+    "TopicName": "birhaber.content_module.content_revisions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulecontentrevisionsidintContentRevisionsController",
+    "TopicName": "birhaber.content_module.content_revisions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulecontentcategoriesremovecategorycontentcategoryarticleidintcontentcategorycategoryidintContentCategoriesController",
+    "TopicName": "birhaber.content_module.content_categories.remove_category_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmodulecontentcategoriesContentCategoriesController",
+    "TopicName": "birhaber.content_module.content_categories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmodulecontentcategoriesidintContentCategoriesController",
+    "TopicName": "birhaber.content_module.content_categories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulecontentcategoriesidintContentCategoriesController",
+    "TopicName": "birhaber.content_module.content_categories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmodulefeaturedarticlesdeactivatefeaturedarticleidintFeaturedArticlesController",
+    "TopicName": "birhaber.content_module.featured_articles.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmodulefeaturedarticlesFeaturedArticlesController",
+    "TopicName": "birhaber.content_module.featured_articles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmodulefeaturedarticlesidintFeaturedArticlesController",
+    "TopicName": "birhaber.content_module.featured_articles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulefeaturedarticlesidintFeaturedArticlesController",
+    "TopicName": "birhaber.content_module.featured_articles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmodulearticlestatisticsArticleStatisticsController",
+    "TopicName": "birhaber.content_module.article_statistics_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmodulearticlestatisticsidintArticleStatisticsController",
+    "TopicName": "birhaber.content_module.article_statistics_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmodulearticlestatisticsidintArticleStatisticsController",
+    "TopicName": "birhaber.content_module.article_statistics_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmoduleauthorsdeactivateauthoridintAuthorsController",
+    "TopicName": "birhaber.content_module.authors.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmoduleauthorsAuthorsController",
+    "TopicName": "birhaber.content_module.authors_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmoduleauthorsidintAuthorsController",
+    "TopicName": "birhaber.content_module.authors_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmoduleauthorsidintAuthorsController",
+    "TopicName": "birhaber.content_module.authors_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicontentmoduleeditorsdeactivateeditoridintEditorsController",
+    "TopicName": "birhaber.content_module.editors.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmoduleeditorsEditorsController",
+    "TopicName": "birhaber.content_module.editors_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmoduleeditorsidintEditorsController",
+    "TopicName": "birhaber.content_module.editors_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmoduleeditorsidintEditorsController",
+    "TopicName": "birhaber.content_module.editors_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicontentmoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.content_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicontentmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.content_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicontentmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.content_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationsmarkasreadnotificationidintNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications.mark_as_read_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationsmarkassentnotificationidintNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications.mark_as_sent_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationsmarkasfailednotificationidintNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications.mark_as_failed_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationscleanupoldreadnotificationstatusNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications.cleanup_old_read_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationsNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationsidintNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationsidintNotificationsController",
+    "TopicName": "birhaber.notification_module.notifications_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationpreferencestogglenotificationnotificationpreferenceidintNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences.toggle_notification_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationpreferencessetfrequencynotificationpreferenceidintNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences.set_frequency_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationpreferencesremovepreferencenotificationpreferencereaderidintnotificationpreferencenotificationtypenotificationpreferencechannelNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences.remove_preference_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationpreferencesNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationpreferencesidintNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationpreferencesidintNotificationPreferencesController",
+    "TopicName": "birhaber.notification_module.notification_preferences_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationtemplatesdeactivatenotificationtemplateidintNotificationTemplatesController",
+    "TopicName": "birhaber.notification_module.notification_templates.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationtemplatesNotificationTemplatesController",
+    "TopicName": "birhaber.notification_module.notification_templates_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationtemplatesidintNotificationTemplatesController",
+    "TopicName": "birhaber.notification_module.notification_templates_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationtemplatesidintNotificationTemplatesController",
+    "TopicName": "birhaber.notification_module.notification_templates_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationqueuesincrementretrynotificationqueueidintNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues.increment_retry_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationqueuesmarksentnotificationqueueidintNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues.mark_sent_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationqueuescleanupprocessednotificationqueuestatusNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues.cleanup_processed_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationqueuesNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationqueuesidintNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationqueuesidintNotificationQueuesController",
+    "TopicName": "birhaber.notification_module.notification_queues_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationstatisticsNotificationStatisticsController",
+    "TopicName": "birhaber.notification_module.notification_statistics_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationstatisticsidintNotificationStatisticsController",
+    "TopicName": "birhaber.notification_module.notification_statistics_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationstatisticsidintNotificationStatisticsController",
+    "TopicName": "birhaber.notification_module.notification_statistics_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationbatchesupdatesentcountnotificationbatchidintNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches.update_sent_count_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationbatchesupdatedeliveredcountnotificationbatchidintNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches.update_delivered_count_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapinotificationmodulenotificationbatchescompletebatchnotificationbatchidintNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches.complete_batch_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulenotificationbatchesNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulenotificationbatchesidintNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulenotificationbatchesidintNotificationBatchesController",
+    "TopicName": "birhaber.notification_module.notification_batches_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulearticlesArticlesController",
+    "TopicName": "birhaber.notification_module.articles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.notification_module.articles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.notification_module.articles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmodulereadersReadersController",
+    "TopicName": "birhaber.notification_module.readers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmodulereadersidintReadersController",
+    "TopicName": "birhaber.notification_module.readers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmodulereadersidintReadersController",
+    "TopicName": "birhaber.notification_module.readers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapinotificationmoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.notification_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapinotificationmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.notification_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapinotificationmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.notification_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitagmoduletagsincrementusagetagidintTagsController",
+    "TopicName": "birhaber.tag_module.tags.increment_usage_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitagmoduletagsdeactivatetagidintTagsController",
+    "TopicName": "birhaber.tag_module.tags.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagsremoveunusedtagstatusTagsController",
+    "TopicName": "birhaber.tag_module.tags.remove_unused_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmoduletagsTagsController",
+    "TopicName": "birhaber.tag_module.tags_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmoduletagsidintTagsController",
+    "TopicName": "birhaber.tag_module.tags_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagsidintTagsController",
+    "TopicName": "birhaber.tag_module.tags_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmodulearticletagsremovetagarticletagarticleidintarticletagtagidintArticleTagsController",
+    "TopicName": "birhaber.tag_module.article_tags.remove_tag_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmodulearticletagsArticleTagsController",
+    "TopicName": "birhaber.tag_module.article_tags_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmodulearticletagsidintArticleTagsController",
+    "TopicName": "birhaber.tag_module.article_tags_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmodulearticletagsidintArticleTagsController",
+    "TopicName": "birhaber.tag_module.article_tags_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmoduletagstatisticsTagStatisticsController",
+    "TopicName": "birhaber.tag_module.tag_statistics_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmoduletagstatisticsidintTagStatisticsController",
+    "TopicName": "birhaber.tag_module.tag_statistics_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagstatisticsidintTagStatisticsController",
+    "TopicName": "birhaber.tag_module.tag_statistics_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitagmoduletagsynonymsdeactivatetagsynonymidintTagSynonymsController",
+    "TopicName": "birhaber.tag_module.tag_synonyms.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagsynonymsremovesynonymtagsynonymprimarytagidinttagsynonymsynonymtagidintTagSynonymsController",
+    "TopicName": "birhaber.tag_module.tag_synonyms.remove_synonym_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmoduletagsynonymsTagSynonymsController",
+    "TopicName": "birhaber.tag_module.tag_synonyms_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmoduletagsynonymsidintTagSynonymsController",
+    "TopicName": "birhaber.tag_module.tag_synonyms_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagsynonymsidintTagSynonymsController",
+    "TopicName": "birhaber.tag_module.tag_synonyms_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitagmoduletagsearchhistoriesincrementsearchcounttagsearchhistorytagidinttagsearchhistorysearchqueryTagSearchHistoriesController",
+    "TopicName": "birhaber.tag_module.tag_search_histories.increment_search_count_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmoduletagsearchhistoriesTagSearchHistoriesController",
+    "TopicName": "birhaber.tag_module.tag_search_histories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmoduletagsearchhistoriesidintTagSearchHistoriesController",
+    "TopicName": "birhaber.tag_module.tag_search_histories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduletagsearchhistoriesidintTagSearchHistoriesController",
+    "TopicName": "birhaber.tag_module.tag_search_histories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmodulearticlesArticlesController",
+    "TopicName": "birhaber.tag_module.articles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.tag_module.articles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmodulearticlesidintArticlesController",
+    "TopicName": "birhaber.tag_module.articles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitagmoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.tag_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitagmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.tag_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitagmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.tag_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermodulecitiesdeactivatecityidintCitiesController",
+    "TopicName": "birhaber.weather_module.cities.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermodulecitiesCitiesController",
+    "TopicName": "birhaber.weather_module.cities_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermodulecitiesidintCitiesController",
+    "TopicName": "birhaber.weather_module.cities_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermodulecitiesidintCitiesController",
+    "TopicName": "birhaber.weather_module.cities_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatherdataupdateweatherweatherdatacityidintWeatherDataController",
+    "TopicName": "birhaber.weather_module.weather_data.update_weather_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleweatherdataWeatherDataController",
+    "TopicName": "birhaber.weather_module.weather_data_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleweatherdataidintWeatherDataController",
+    "TopicName": "birhaber.weather_module.weather_data_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatherdataidintWeatherDataController",
+    "TopicName": "birhaber.weather_module.weather_data_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatherforecastsupdateforecastweatherforecastidintWeatherForecastsController",
+    "TopicName": "birhaber.weather_module.weather_forecasts.update_forecast_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleweatherforecastsWeatherForecastsController",
+    "TopicName": "birhaber.weather_module.weather_forecasts_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleweatherforecastsidintWeatherForecastsController",
+    "TopicName": "birhaber.weather_module.weather_forecasts_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatherforecastsidintWeatherForecastsController",
+    "TopicName": "birhaber.weather_module.weather_forecasts_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatheralertsdeactivatealertweatheralertidintWeatherAlertsController",
+    "TopicName": "birhaber.weather_module.weather_alerts.deactivate_alert_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatheralertsextendalertweatheralertidintWeatherAlertsController",
+    "TopicName": "birhaber.weather_module.weather_alerts.extend_alert_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleweatheralertsWeatherAlertsController",
+    "TopicName": "birhaber.weather_module.weather_alerts_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleweatheralertsidintWeatherAlertsController",
+    "TopicName": "birhaber.weather_module.weather_alerts_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatheralertsidintWeatherAlertsController",
+    "TopicName": "birhaber.weather_module.weather_alerts_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleweatherhistoriesWeatherHistoriesController",
+    "TopicName": "birhaber.weather_module.weather_histories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleweatherhistoriesidintWeatherHistoriesController",
+    "TopicName": "birhaber.weather_module.weather_histories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatherhistoriesidintWeatherHistoriesController",
+    "TopicName": "birhaber.weather_module.weather_histories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatherpreferencestogglealertsweatherpreferenceidintWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences.toggle_alerts_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiweathermoduleweatherpreferencestogglenotificationsweatherpreferenceidintWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences.toggle_notifications_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatherpreferencesremovepreferenceweatherpreferencereaderidintweatherpreferencecityidintWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences.remove_preference_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleweatherpreferencesWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleweatherpreferencesidintWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleweatherpreferencesidintWeatherPreferencesController",
+    "TopicName": "birhaber.weather_module.weather_preferences_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiweathermoduleauditlogsAuditLogsController",
+    "TopicName": "birhaber.weather_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiweathermoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.weather_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiweathermoduleauditlogsidguidAuditLogsController",
+    "TopicName": "birhaber.weather_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsupdateportalpagepermissionPortalPageDefinitionsController",
+    "TopicName": "birhaber.identity_module.portal_page_definitions.update_portal_page_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsupdateapipermissionApiMethodDefinitionsController",
+    "TopicName": "birhaber.identity_module.api_method_definitions.update_api_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthregisterAuthenticationsController",
+    "TopicName": "birhaber.auth.register_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthloginAuthenticationsController",
+    "TopicName": "birhaber.auth.login_post",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthvalidateAuthenticationsController",
+    "TopicName": "birhaber.auth.validate_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthrefreshAuthenticationsController",
+    "TopicName": "birhaber.auth.refresh_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresendconfirmationemailAuthenticationsController",
+    "TopicName": "birhaber.auth.resendconfirmationemail_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthforgotpasswordAuthenticationsController",
+    "TopicName": "birhaber.auth.forgotpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresetpasswordAuthenticationsController",
+    "TopicName": "birhaber.auth.resetpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Postapiauthmanageuser2faAuthenticationsController",
+    "TopicName": "birhaber.auth.manage.user2fa_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthmanageinfoAuthenticationsController",
+    "TopicName": "birhaber.auth.manage.info_post",
+    "IsActive": false
+  }
+]
+}

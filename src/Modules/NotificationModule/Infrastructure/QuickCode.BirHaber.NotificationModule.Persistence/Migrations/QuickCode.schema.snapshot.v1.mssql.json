@@ -1,0 +1,687 @@
+{
+  "schemaSnapshotVersion": 1,
+  "moduleName": "NotificationModule",
+  "databaseProvider": "mssql",
+  "generatedAtUtc": "2026-07-22T21:38:51.4972303+00:00",
+  "tables": [
+    {
+      "schema": "dbo",
+      "physicalTableName": "ARTICLES",
+      "entityClassStem": "Article",
+      "columns": [
+        {
+          "name": "CONTENT",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DESCRIPTION",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SLUG",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TITLE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "AUDIT_LOGS",
+      "entityClassStem": "AuditLog",
+      "columns": [
+        {
+          "name": "ACTION",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGED_COLUMNS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_SUMMARY",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CORRELATION_ID",
+          "sqlType": "nvarchar(100)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DURATION_MS",
+          "sqlType": "int",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ERROR_MESSAGE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "HASH",
+          "sqlType": "nvarchar(128)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "uniqueidentifier",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "IP_ADDRESS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_CHANGED",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_SUCCESS",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NEW_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "OLD_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_MODULE",
+          "sqlType": "nvarchar(150)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_PATH",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS_CODE",
+          "sqlType": "int",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TIMESTAMP",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_AGENT",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_GROUP",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATIONS",
+      "entityClassStem": "Notification",
+      "columns": [
+        {
+          "name": "CHANNEL",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "MESSAGE",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NOTIFICATION_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PRIORITY",
+          "sqlType": "tinyint",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "READER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "READ_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "RELATED_ARTICLE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "RELATED_COMMENT_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SENT_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TITLE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATION_BATCHES",
+      "entityClassStem": "NotificationBatch",
+      "columns": [
+        {
+          "name": "BATCH_NAME",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "COMPLETED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DELIVERED_COUNT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "FAILED_COUNT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "NOTIFICATION_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SENT_COUNT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TOTAL_RECIPIENTS",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATION_PREFERENCES",
+      "entityClassStem": "NotificationPreference",
+      "columns": [
+        {
+          "name": "CHANNEL",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "FREQUENCY",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ENABLED",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NOTIFICATION_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "READER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATION_QUEUES",
+      "entityClassStem": "NotificationQueue",
+      "columns": [
+        {
+          "name": "CHANNEL",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "LAST_RETRY_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NOTIFICATION_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "READER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "RETRY_COUNT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATION_STATISTICS",
+      "entityClassStem": "NotificationStatistic",
+      "columns": [
+        {
+          "name": "CHANNEL",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_DELIVERED",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_FAILED",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_READ",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_SENT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "NOTIFICATION_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATISTICS_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "NOTIFICATION_TEMPLATES",
+      "entityClassStem": "NotificationTemplate",
+      "columns": [
+        {
+          "name": "CHANNEL",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "MESSAGE_TEMPLATE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NOTIFICATION_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SUBJECT_TEMPLATE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "READERS",
+      "entityClassStem": "Reader",
+      "columns": [
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "EMAIL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿IF OBJECT_ID(N'dbo.NOTIFICATION_PREFERENCES', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[NOTIFICATION_PREFERENCES] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [READER_ID] int NOT NULL,
+        [NOTIFICATION_TYPE] nvarchar(50) NOT NULL,
+        [CHANNEL] nvarchar(50) NOT NULL,
+        [IS_ENABLED] bit NOT NULL DEFAULT 1,
+        [FREQUENCY] nvarchar(50) NOT NULL,
+        [CREATED_DATE] datetime2(7) NOT NULL,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_NOTIFICATION_PREFERENCES] PRIMARY KEY ([ID])
+    );
+END;

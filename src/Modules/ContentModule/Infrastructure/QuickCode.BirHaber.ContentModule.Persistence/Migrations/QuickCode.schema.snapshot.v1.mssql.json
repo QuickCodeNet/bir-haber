@@ -1,0 +1,610 @@
+{
+  "schemaSnapshotVersion": 1,
+  "moduleName": "ContentModule",
+  "databaseProvider": "mssql",
+  "generatedAtUtc": "2026-07-22T21:38:51.4247299+00:00",
+  "tables": [
+    {
+      "schema": "dbo",
+      "physicalTableName": "ARTICLES",
+      "entityClassStem": "Article",
+      "columns": [
+        {
+          "name": "AUTHOR_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CONTENT",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CONTENT_TYPE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DESCRIPTION",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "EDITOR_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "FEATURED_IMAGE_URL",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PRIORITY",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PUBLISHED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SLUG",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TITLE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "UPDATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "VIEW_COUNT",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "ARTICLE_STATISTICS",
+      "entityClassStem": "ArticleStatistic",
+      "columns": [
+        {
+          "name": "ARTICLE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_COMMENTS",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_SHARES",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DAILY_VIEWS",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "STATISTICS_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TOTAL_VIEWS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "AUDIT_LOGS",
+      "entityClassStem": "AuditLog",
+      "columns": [
+        {
+          "name": "ACTION",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGED_COLUMNS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_SUMMARY",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CORRELATION_ID",
+          "sqlType": "nvarchar(100)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DURATION_MS",
+          "sqlType": "int",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ERROR_MESSAGE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "HASH",
+          "sqlType": "nvarchar(128)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "uniqueidentifier",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "IP_ADDRESS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_CHANGED",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_SUCCESS",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NEW_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "OLD_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_MODULE",
+          "sqlType": "nvarchar(150)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_PATH",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS_CODE",
+          "sqlType": "int",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TIMESTAMP",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_AGENT",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_GROUP",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "AUTHORS",
+      "entityClassStem": "Author",
+      "columns": [
+        {
+          "name": "BIO",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "EMAIL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PROFILE_IMAGE_URL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "CONTENT_CATEGORIES",
+      "entityClassStem": "ContentCategory",
+      "columns": [
+        {
+          "name": "ARTICLE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ASSIGNED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CATEGORY_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "CONTENT_REVISIONS",
+      "entityClassStem": "ContentRevision",
+      "columns": [
+        {
+          "name": "ARTICLE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGED_BY_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_REASON",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CONTENT",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "REVISION_NUMBER",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TITLE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "EDITORS",
+      "entityClassStem": "Editor",
+      "columns": [
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DEPARTMENT",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "EMAIL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "FEATURED_ARTICLES",
+      "entityClassStem": "FeaturedArticle",
+      "columns": [
+        {
+          "name": "ARTICLE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "END_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "FEATURED_POSITION",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "START_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    }
+  ]
+}

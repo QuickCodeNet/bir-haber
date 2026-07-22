@@ -1,0 +1,15 @@
+﻿IF OBJECT_ID(N'dbo.COMMENT_STATISTICS', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[COMMENT_STATISTICS] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [ARTICLE_ID] int NOT NULL,
+        [DAILY_COMMENTS] int NOT NULL DEFAULT '0',
+        [DAILY_APPROVED] int NOT NULL DEFAULT '0',
+        [DAILY_REJECTED] int NOT NULL DEFAULT '0',
+        [DAILY_SPAM] int NOT NULL DEFAULT '0',
+        [STATISTICS_DATE] datetime2(7) NOT NULL,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_COMMENT_STATISTICS] PRIMARY KEY ([ID])
+    );
+END;

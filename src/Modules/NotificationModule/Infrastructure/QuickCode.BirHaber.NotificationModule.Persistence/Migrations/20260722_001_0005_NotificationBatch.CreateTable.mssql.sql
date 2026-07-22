@@ -1,0 +1,18 @@
+﻿IF OBJECT_ID(N'dbo.NOTIFICATION_BATCHES', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[NOTIFICATION_BATCHES] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [BATCH_NAME] nvarchar(50) NOT NULL,
+        [NOTIFICATION_TYPE] nvarchar(50) NOT NULL,
+        [TOTAL_RECIPIENTS] int NOT NULL,
+        [SENT_COUNT] int NOT NULL DEFAULT '0',
+        [DELIVERED_COUNT] int NOT NULL DEFAULT '0',
+        [FAILED_COUNT] int NOT NULL DEFAULT '0',
+        [STATUS] nvarchar(50) NOT NULL DEFAULT 'PENDING',
+        [CREATED_DATE] datetime2(7) NOT NULL,
+        [COMPLETED_DATE] datetime2(7) NOT NULL,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_NOTIFICATION_BATCHES] PRIMARY KEY ([ID])
+    );
+END;

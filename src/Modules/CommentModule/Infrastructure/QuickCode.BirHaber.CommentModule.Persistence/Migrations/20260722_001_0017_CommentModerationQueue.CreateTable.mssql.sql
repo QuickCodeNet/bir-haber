@@ -1,0 +1,15 @@
+﻿IF OBJECT_ID(N'dbo.COMMENT_MODERATION_QUEUES', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[COMMENT_MODERATION_QUEUES] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [COMMENT_ID] int NOT NULL,
+        [ASSIGNED_MODERATOR_ID] int NOT NULL,
+        [PRIORITY] int NOT NULL DEFAULT '0',
+        [STATUS] nvarchar(50) NOT NULL DEFAULT 'PENDING',
+        [CREATED_DATE] datetime2(7) NOT NULL,
+        [COMPLETED_DATE] datetime2(7) NOT NULL,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_COMMENT_MODERATION_QUEUES] PRIMARY KEY ([ID])
+    );
+END;

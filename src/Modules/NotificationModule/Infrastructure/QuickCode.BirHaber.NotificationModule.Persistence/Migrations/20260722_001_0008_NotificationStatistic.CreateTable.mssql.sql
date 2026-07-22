@@ -1,0 +1,16 @@
+﻿IF OBJECT_ID(N'dbo.NOTIFICATION_STATISTICS', N'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[NOTIFICATION_STATISTICS] (
+        [ID] int IDENTITY(1,1) NOT NULL,
+        [NOTIFICATION_TYPE] nvarchar(50) NOT NULL,
+        [CHANNEL] nvarchar(50) NOT NULL,
+        [DAILY_SENT] int NOT NULL DEFAULT '0',
+        [DAILY_DELIVERED] int NOT NULL DEFAULT '0',
+        [DAILY_READ] int NOT NULL DEFAULT '0',
+        [DAILY_FAILED] int NOT NULL DEFAULT '0',
+        [STATISTICS_DATE] datetime2(7) NOT NULL,
+        [IsDeleted] bit NOT NULL DEFAULT 0,
+        [DeletedOnUtc] datetime2(7) NULL,
+        CONSTRAINT [PK_NOTIFICATION_STATISTICS] PRIMARY KEY ([ID])
+    );
+END;

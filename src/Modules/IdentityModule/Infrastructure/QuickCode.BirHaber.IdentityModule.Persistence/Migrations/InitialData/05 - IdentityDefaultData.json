@@ -1,0 +1,756 @@
+﻿{
+  "PortalMenus": [
+    {
+      "Key": "IdentityModule_IdentityModule",
+      "Name": "IdentityModule",
+      "Text": "IdentityModule",
+      "Tooltip": "IdentityModule",
+      "ActionName": "",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodAccessGrants",
+      "Name": "ApiMethodAccessGrants",
+      "Text": "ApiMethodAccessGrants",
+      "Tooltip": "ApiMethodAccessGrants",
+      "ActionName": "/IdentityModuleApiMethodAccessGrants/List",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodDefinitions",
+      "Name": "ApiMethodDefinitions",
+      "Text": "ApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/List",
+      "OrderNo": 101,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoles",
+      "Name": "AspNetRoles",
+      "Text": "AspNetRoles",
+      "Tooltip": "AspNetRoles",
+      "ActionName": "/IdentityModuleAspNetRoles/List",
+      "OrderNo": 102,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoleClaims",
+      "Name": "AspNetRoleClaims",
+      "Text": "AspNetRoleClaims",
+      "Tooltip": "AspNetRoleClaims",
+      "ActionName": "/IdentityModuleAspNetRoleClaims/List",
+      "OrderNo": 103,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUsers",
+      "Name": "AspNetUsers",
+      "Text": "AspNetUsers",
+      "Tooltip": "AspNetUsers",
+      "ActionName": "/IdentityModuleAspNetUsers/List",
+      "OrderNo": 104,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserClaims",
+      "Name": "AspNetUserClaims",
+      "Text": "AspNetUserClaims",
+      "Tooltip": "AspNetUserClaims",
+      "ActionName": "/IdentityModuleAspNetUserClaims/List",
+      "OrderNo": 105,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserLogins",
+      "Name": "AspNetUserLogins",
+      "Text": "AspNetUserLogins",
+      "Tooltip": "AspNetUserLogins",
+      "ActionName": "/IdentityModuleAspNetUserLogins/List",
+      "OrderNo": 106,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserRoles",
+      "Name": "AspNetUserRoles",
+      "Text": "AspNetUserRoles",
+      "Tooltip": "AspNetUserRoles",
+      "ActionName": "/IdentityModuleAspNetUserRoles/List",
+      "OrderNo": 107,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserTokens",
+      "Name": "AspNetUserTokens",
+      "Text": "AspNetUserTokens",
+      "Tooltip": "AspNetUserTokens",
+      "ActionName": "/IdentityModuleAspNetUserTokens/List",
+      "OrderNo": 108,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/IdentityModuleAuditLogs/List",
+      "OrderNo": 109,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ColumnTypes",
+      "Name": "ColumnTypes",
+      "Text": "ColumnTypes",
+      "Tooltip": "ColumnTypes",
+      "ActionName": "/IdentityModuleColumnTypes/List",
+      "OrderNo": 110,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_KafkaEvents",
+      "Name": "KafkaEvents",
+      "Text": "KafkaEvents",
+      "Tooltip": "KafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/List",
+      "OrderNo": 111,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_Models",
+      "Name": "Models",
+      "Text": "Models",
+      "Tooltip": "Models",
+      "ActionName": "/IdentityModuleModels/List",
+      "OrderNo": 112,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_Modules",
+      "Name": "Modules",
+      "Text": "Modules",
+      "Tooltip": "Modules",
+      "ActionName": "/IdentityModuleModules/List",
+      "OrderNo": 113,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PermissionGroups",
+      "Name": "PermissionGroups",
+      "Text": "PermissionGroups",
+      "Tooltip": "PermissionGroups",
+      "ActionName": "/IdentityModulePermissionGroups/List",
+      "OrderNo": 114,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalMenus",
+      "Name": "PortalMenus",
+      "Text": "PortalMenus",
+      "Tooltip": "PortalMenus",
+      "ActionName": "/IdentityModulePortalMenus/List",
+      "OrderNo": 115,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalPageAccessGrants",
+      "Name": "PortalPageAccessGrants",
+      "Text": "PortalPageAccessGrants",
+      "Tooltip": "PortalPageAccessGrants",
+      "ActionName": "/IdentityModulePortalPageAccessGrants/List",
+      "OrderNo": 116,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalPageDefinitions",
+      "Name": "PortalPageDefinitions",
+      "Text": "PortalPageDefinitions",
+      "Tooltip": "PortalPageDefinitions",
+      "ActionName": "/IdentityModulePortalPageDefinitions/List",
+      "OrderNo": 117,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_RefreshTokens",
+      "Name": "RefreshTokens",
+      "Text": "RefreshTokens",
+      "Tooltip": "RefreshTokens",
+      "ActionName": "/IdentityModuleRefreshTokens/List",
+      "OrderNo": 118,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TableComboboxSettings",
+      "Name": "TableComboboxSettings",
+      "Text": "TableComboboxSettings",
+      "Tooltip": "TableComboboxSettings",
+      "ActionName": "/IdentityModuleTableComboboxSettings/List",
+      "OrderNo": 119,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TopicWorkflows",
+      "Name": "TopicWorkflows",
+      "Text": "TopicWorkflows",
+      "Tooltip": "TopicWorkflows",
+      "ActionName": "/IdentityModuleTopicWorkflows/List",
+      "OrderNo": 120,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "CategoryModule_CategoryModule",
+      "Name": "CategoryModule",
+      "Text": "CategoryModule",
+      "Tooltip": "CategoryModule",
+      "ActionName": "",
+      "OrderNo": 121,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/CategoryModuleAuditLogs/List",
+      "OrderNo": 121,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_Categories",
+      "Name": "Categories",
+      "Text": "Categories",
+      "Tooltip": "Categories",
+      "ActionName": "/CategoryModuleCategories/List",
+      "OrderNo": 122,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_CategoryModerators",
+      "Name": "CategoryModerators",
+      "Text": "CategoryModerators",
+      "Tooltip": "CategoryModerators",
+      "ActionName": "/CategoryModuleCategoryModerators/List",
+      "OrderNo": 123,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_CategoryStatistics",
+      "Name": "CategoryStatistics",
+      "Text": "CategoryStatistics",
+      "Tooltip": "CategoryStatistics",
+      "ActionName": "/CategoryModuleCategoryStatistics/List",
+      "OrderNo": 124,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_CategoryTemplates",
+      "Name": "CategoryTemplates",
+      "Text": "CategoryTemplates",
+      "Tooltip": "CategoryTemplates",
+      "ActionName": "/CategoryModuleCategoryTemplates/List",
+      "OrderNo": 125,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CategoryModule_FeaturedCategories",
+      "Name": "FeaturedCategories",
+      "Text": "FeaturedCategories",
+      "Tooltip": "FeaturedCategories",
+      "ActionName": "/CategoryModuleFeaturedCategories/List",
+      "OrderNo": 126,
+      "ParentName": "CategoryModule"
+    },
+    {
+      "Key": "CommentModule_CommentModule",
+      "Name": "CommentModule",
+      "Text": "CommentModule",
+      "Tooltip": "CommentModule",
+      "ActionName": "",
+      "OrderNo": 127,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_Articles",
+      "Name": "Articles",
+      "Text": "Articles",
+      "Tooltip": "Articles",
+      "ActionName": "/CommentModuleArticles/List",
+      "OrderNo": 127,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/CommentModuleAuditLogs/List",
+      "OrderNo": 128,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_Comments",
+      "Name": "Comments",
+      "Text": "Comments",
+      "Tooltip": "Comments",
+      "ActionName": "/CommentModuleComments/List",
+      "OrderNo": 129,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_CommentLikes",
+      "Name": "CommentLikes",
+      "Text": "CommentLikes",
+      "Tooltip": "CommentLikes",
+      "ActionName": "/CommentModuleCommentLikes/List",
+      "OrderNo": 130,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_CommentModerationQueues",
+      "Name": "CommentModerationQueues",
+      "Text": "CommentModerationQueues",
+      "Tooltip": "CommentModerationQueues",
+      "ActionName": "/CommentModuleCommentModerationQueues/List",
+      "OrderNo": 131,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_CommentReports",
+      "Name": "CommentReports",
+      "Text": "CommentReports",
+      "Tooltip": "CommentReports",
+      "ActionName": "/CommentModuleCommentReports/List",
+      "OrderNo": 132,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "CommentModule_CommentStatistics",
+      "Name": "CommentStatistics",
+      "Text": "CommentStatistics",
+      "Tooltip": "CommentStatistics",
+      "ActionName": "/CommentModuleCommentStatistics/List",
+      "OrderNo": 133,
+      "ParentName": "CommentModule"
+    },
+    {
+      "Key": "ContentModule_ContentModule",
+      "Name": "ContentModule",
+      "Text": "ContentModule",
+      "Tooltip": "ContentModule",
+      "ActionName": "",
+      "OrderNo": 134,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_Articles",
+      "Name": "Articles",
+      "Text": "Articles",
+      "Tooltip": "Articles",
+      "ActionName": "/ContentModuleArticles/List",
+      "OrderNo": 134,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_ArticleStatistics",
+      "Name": "ArticleStatistics",
+      "Text": "ArticleStatistics",
+      "Tooltip": "ArticleStatistics",
+      "ActionName": "/ContentModuleArticleStatistics/List",
+      "OrderNo": 135,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/ContentModuleAuditLogs/List",
+      "OrderNo": 136,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_Authors",
+      "Name": "Authors",
+      "Text": "Authors",
+      "Tooltip": "Authors",
+      "ActionName": "/ContentModuleAuthors/List",
+      "OrderNo": 137,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_ContentCategories",
+      "Name": "ContentCategories",
+      "Text": "ContentCategories",
+      "Tooltip": "ContentCategories",
+      "ActionName": "/ContentModuleContentCategories/List",
+      "OrderNo": 138,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_ContentRevisions",
+      "Name": "ContentRevisions",
+      "Text": "ContentRevisions",
+      "Tooltip": "ContentRevisions",
+      "ActionName": "/ContentModuleContentRevisions/List",
+      "OrderNo": 139,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_Editors",
+      "Name": "Editors",
+      "Text": "Editors",
+      "Tooltip": "Editors",
+      "ActionName": "/ContentModuleEditors/List",
+      "OrderNo": 140,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "ContentModule_FeaturedArticles",
+      "Name": "FeaturedArticles",
+      "Text": "FeaturedArticles",
+      "Tooltip": "FeaturedArticles",
+      "ActionName": "/ContentModuleFeaturedArticles/List",
+      "OrderNo": 141,
+      "ParentName": "ContentModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationModule",
+      "Name": "NotificationModule",
+      "Text": "NotificationModule",
+      "Tooltip": "NotificationModule",
+      "ActionName": "",
+      "OrderNo": 142,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_Articles",
+      "Name": "Articles",
+      "Text": "Articles",
+      "Tooltip": "Articles",
+      "ActionName": "/NotificationModuleArticles/List",
+      "OrderNo": 142,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/NotificationModuleAuditLogs/List",
+      "OrderNo": 143,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_Notifications",
+      "Name": "Notifications",
+      "Text": "Notifications",
+      "Tooltip": "Notifications",
+      "ActionName": "/NotificationModuleNotifications/List",
+      "OrderNo": 144,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationBatches",
+      "Name": "NotificationBatches",
+      "Text": "NotificationBatches",
+      "Tooltip": "NotificationBatches",
+      "ActionName": "/NotificationModuleNotificationBatches/List",
+      "OrderNo": 145,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationPreferences",
+      "Name": "NotificationPreferences",
+      "Text": "NotificationPreferences",
+      "Tooltip": "NotificationPreferences",
+      "ActionName": "/NotificationModuleNotificationPreferences/List",
+      "OrderNo": 146,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationQueues",
+      "Name": "NotificationQueues",
+      "Text": "NotificationQueues",
+      "Tooltip": "NotificationQueues",
+      "ActionName": "/NotificationModuleNotificationQueues/List",
+      "OrderNo": 147,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationStatistics",
+      "Name": "NotificationStatistics",
+      "Text": "NotificationStatistics",
+      "Tooltip": "NotificationStatistics",
+      "ActionName": "/NotificationModuleNotificationStatistics/List",
+      "OrderNo": 148,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_NotificationTemplates",
+      "Name": "NotificationTemplates",
+      "Text": "NotificationTemplates",
+      "Tooltip": "NotificationTemplates",
+      "ActionName": "/NotificationModuleNotificationTemplates/List",
+      "OrderNo": 149,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "NotificationModule_Readers",
+      "Name": "Readers",
+      "Text": "Readers",
+      "Tooltip": "Readers",
+      "ActionName": "/NotificationModuleReaders/List",
+      "OrderNo": 150,
+      "ParentName": "NotificationModule"
+    },
+    {
+      "Key": "TagModule_TagModule",
+      "Name": "TagModule",
+      "Text": "TagModule",
+      "Tooltip": "TagModule",
+      "ActionName": "",
+      "OrderNo": 151,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_Articles",
+      "Name": "Articles",
+      "Text": "Articles",
+      "Tooltip": "Articles",
+      "ActionName": "/TagModuleArticles/List",
+      "OrderNo": 151,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_ArticleTags",
+      "Name": "ArticleTags",
+      "Text": "ArticleTags",
+      "Tooltip": "ArticleTags",
+      "ActionName": "/TagModuleArticleTags/List",
+      "OrderNo": 152,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/TagModuleAuditLogs/List",
+      "OrderNo": 153,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_Tags",
+      "Name": "Tags",
+      "Text": "Tags",
+      "Tooltip": "Tags",
+      "ActionName": "/TagModuleTags/List",
+      "OrderNo": 154,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_TagSearchHistories",
+      "Name": "TagSearchHistories",
+      "Text": "TagSearchHistories",
+      "Tooltip": "TagSearchHistories",
+      "ActionName": "/TagModuleTagSearchHistories/List",
+      "OrderNo": 155,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_TagStatistics",
+      "Name": "TagStatistics",
+      "Text": "TagStatistics",
+      "Tooltip": "TagStatistics",
+      "ActionName": "/TagModuleTagStatistics/List",
+      "OrderNo": 156,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "TagModule_TagSynonyms",
+      "Name": "TagSynonyms",
+      "Text": "TagSynonyms",
+      "Tooltip": "TagSynonyms",
+      "ActionName": "/TagModuleTagSynonyms/List",
+      "OrderNo": 157,
+      "ParentName": "TagModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherModule",
+      "Name": "WeatherModule",
+      "Text": "WeatherModule",
+      "Tooltip": "WeatherModule",
+      "ActionName": "",
+      "OrderNo": 158,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/WeatherModuleAuditLogs/List",
+      "OrderNo": 158,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_Cities",
+      "Name": "Cities",
+      "Text": "Cities",
+      "Tooltip": "Cities",
+      "ActionName": "/WeatherModuleCities/List",
+      "OrderNo": 159,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherAlerts",
+      "Name": "WeatherAlerts",
+      "Text": "WeatherAlerts",
+      "Tooltip": "WeatherAlerts",
+      "ActionName": "/WeatherModuleWeatherAlerts/List",
+      "OrderNo": 160,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherData",
+      "Name": "WeatherData",
+      "Text": "WeatherData",
+      "Tooltip": "WeatherData",
+      "ActionName": "/WeatherModuleWeatherData/List",
+      "OrderNo": 161,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherForecasts",
+      "Name": "WeatherForecasts",
+      "Text": "WeatherForecasts",
+      "Tooltip": "WeatherForecasts",
+      "ActionName": "/WeatherModuleWeatherForecasts/List",
+      "OrderNo": 162,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherHistories",
+      "Name": "WeatherHistories",
+      "Text": "WeatherHistories",
+      "Tooltip": "WeatherHistories",
+      "ActionName": "/WeatherModuleWeatherHistories/List",
+      "OrderNo": 163,
+      "ParentName": "WeatherModule"
+    },
+    {
+      "Key": "WeatherModule_WeatherPreferences",
+      "Name": "WeatherPreferences",
+      "Text": "WeatherPreferences",
+      "Tooltip": "WeatherPreferences",
+      "ActionName": "/WeatherModuleWeatherPreferences/List",
+      "OrderNo": 164,
+      "ParentName": "WeatherModule"
+    }
+  ],
+  "TableComboboxSettings": [
+    {
+      "TableName": "ApiMethodDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "HttpMethod, UrlPath",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "AspNetRole",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetUser",
+      "IdColumn": "Id",
+      "TextColumns": "Id, FirstName, LastName",
+      "StringFormat": "{0} - {1} {2}"
+    },
+    {
+      "TableName": "KafkaEvent",
+      "IdColumn": "TopicName",
+      "TextColumns": "TopicName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Module",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Model",
+      "IdColumn": "Name",
+      "TextColumns": "Name, ModuleName",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "PermissionGroup",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPageDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "Key",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Category",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Article",
+      "IdColumn": "Id",
+      "TextColumns": "Title",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Comment",
+      "IdColumn": "Id",
+      "TextColumns": "Content",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Author",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Editor",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Notification",
+      "IdColumn": "Id",
+      "TextColumns": "Title",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Reader",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Tag",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "City",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.COMMENT_LIKES', N'U') AND name = N'IX_COMMENT_LIKES_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_COMMENT_LIKES_IsDeleted] ON [dbo].[COMMENT_LIKES] ([IsDeleted]);
+END

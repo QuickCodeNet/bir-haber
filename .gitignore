@@ -1,0 +1,15 @@
+.vs
+bin
+obj
+QuickCode.BirHaber.Api/bin
+QuickCode.BirHaber.Api/obj
+QuickCode.BirHaber.Portal/bin
+QuickCode.BirHaber.Portal/obj
+QuickCode.BirHaber.Web/bin
+QuickCode.BirHaber.Web/obj
+QuickCode.BirHaber.DataLayer/bin
+QuickCode.BirHaber.DataLayer/obj
+.DS_Store
+/src/.idea
+.env
+**/.env

@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.ARTICLE_TAGS', N'U') AND name = N'IX_ARTICLE_TAGS_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_ARTICLE_TAGS_IsDeleted] ON [dbo].[ARTICLE_TAGS] ([IsDeleted]);
+END
